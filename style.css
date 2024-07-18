@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --clr-white: #ffffff;
+  --clr-light-gray: #d6e2f0;
+  --clr-grayish-blue: #7b879d;
+  --clr-dark-blue: #1f3251;
+
+  --fw-r: 400;
+  --fw-b: 700;
+
+  --br: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Outfit", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  background-color: var(--clr-light-gray);
+
+  /* centre all elements */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  padding: 1.6rem;
+  background-color: var(--clr-white);
+  border-radius: var(--br);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: calc(var(--br) * 0.6);
+}
+
+.card h2 {
+  font-size: 2.2rem;
+  color: var(--clr-dark-blue);
+}
+
+.card p {
+  color: var(--clr-grayish-blue);
+}
+
+.card h2,
+.card p {
+  padding-inline: 1.5rem;
+}
+
+.card,
+.card > * {
+  margin-bottom: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
